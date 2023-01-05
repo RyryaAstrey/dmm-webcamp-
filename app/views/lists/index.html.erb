@@ -12,7 +12,9 @@
        <tr>
          <td><%= list.title %></td>
          <td><%= list.body %></td>
-         <td></td>
+         <td><%= link_to 'Show', show_path(list.id) %></td>
+         <td><%= link_to 'Edit', edit_path(list.id) %></td>
+         <td><%= link_to 'destroy', destroy_list_path(list.id),method: :delete, "data-confirm" => "Are you sure?" %></td>
        </tr>
       <%end%>
      </tbody>
@@ -25,5 +27,5 @@
   　<%= f.text_field :title %>
   　<h4>body</h4>
   　<%= f.text_area :body %>
-  　<%= f.submit 'Create Book' %>
+  　<p><%= f.submit 'Create Book' %></p>
   <%end%>

@@ -8,3 +8,35 @@ th{
 td{
   padding:0px 5px 7px 5px;
 }
+
+.error-box{
+  width:450px;
+  border:2px solid red;
+  padding:7px;
+  padding-bottom:0;
+  margin-bottom:20ox;
+  background-color:#f0f0f0;
+}
+
+.error-box >h2{
+  text-align:left;
+  padding:5px 5px 5px 15px;
+  font-size:12px;
+  margin:-7px;
+  margin-bottom:0;
+  background-color:#c00;
+  color:#fff;
+}
+
+.field{
+  margin:0px 0px 10px 0px;
+  text-align:left;
+}
+
+.field >p{
+  margin:0;
+}
+
+.submit{
+  margin:0;
+}
